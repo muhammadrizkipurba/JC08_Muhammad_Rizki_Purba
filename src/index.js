@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req,res)=>{
-  res.send(`App running on ${port} Heroku`)
+  res.send(`<h1>React Mongoose running on ${port} Heroku</h1>`)
 })
 
 app.post("/users", async (req, res) => {
